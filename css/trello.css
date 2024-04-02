@@ -1,0 +1,531 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+
+section{
+    height: 300vh;
+    font-family: 'Reem Kufi', serif;
+    
+}
+
+
+                                                                /* Home */
+
+#logo{
+    height:120px;
+    width: 110px;
+    cursor: pointer;
+}
+
+.scrolltotop{
+    background-color:#ffffff;
+    color: rgb(255, 255, 255);
+    border-radius: 5px ;
+    position: fixed;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    bottom: 30px;
+    right: 30px;
+    padding: 7px  7px 5px;
+    cursor: pointer;
+   
+    
+}
+#home{
+  
+  height: fit-content;
+  
+}
+.nav{
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+}
+.Home-body img{
+  padding-top: 98px;
+  width: 100%;
+  
+}
+.nav-item{
+    font-weight:20px;
+   
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+                                                               
+
+.sidebar{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+#home img{
+  height:fit-content;
+  width:100%;
+}
+
+@media (min-width: 991px) { 
+  .nav-item:hover:not(#footer){
+    margin-right: 10px ;
+    border-radius: 30px;
+    /* color: azure; */
+    background-color: rgb(182, 180, 180);
+    color: goldenrod;
+ }
+
+ #home img{
+  height:fit-content;
+  width:100%;
+}
+ 
+}
+
+                                                              /* Slide1 */                                              
+
+#slide1{
+    
+    height:fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .cpy{
+    display: flex;
+    justify-content: center;
+  }
+
+.cpy img{
+  border-radius: 9px;
+  width: 500px;
+}
+
+  .cpyct p{
+    text-align: justify;
+    text-indent: 40px;
+    
+    
+    
+  }
+
+  .company{
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  @media (max-width: 991px) { 
+    .cpy img{
+      width:100%;
+      border-radius: 7px; 
+      
+    }
+    #slide1{
+      padding-top:80px;
+      
+     }
+    
+  }
+  @media (min-width: 991px) { 
+    .cpy img{
+      width:100%;
+      border-radius: 7px; 
+      
+    }
+    #slide1{
+      padding-top:80px;
+      height: 100vh;
+     
+      
+     }
+    
+  }
+
+                                                              /* Slide-2 */
+
+
+#slide2{
+  background-color: #4287f5;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  text-align: center;
+ 
+ }
+
+.infra img{
+ width: 100%;
+ height: 400px;
+ padding-top:50px ;
+ 
+ 
+}
+
+.animated-txt{
+  
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.anim{
+color: #ffffff;
+
+}
+
+
+/* Define the glow effect */
+.glow {
+  box-shadow: 0 0 10px #234675, 0 0 20px #234675, 0 0 40px #234675, 0 0 80px #234675;
+  animation: glowing 1.5s infinite;
+}
+/* Define the shimmer effect */
+@keyframes glowing {
+  0% {
+    background-color: #234675;
+    box-shadow: 0 0 10px #234675, 0 0 20px #234675, 0 0 40px #234675, 0 0 80px #234675;
+  }
+  50% {
+    background-color: white;
+    box-shadow: 0 0 20px white, 0 0 40px white, 0 0 80px white, 0 0 160px white;
+  }
+  100% {
+    background-color: #234675;
+    box-shadow: 0 0 10px #234675, 0 0 20px #234675, 0 0 40px #234675, 0 0 80px #234675;
+  }
+}
+.image-with-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  /* Change the values as per your preference */
+}
+
+.animated-text {
+  font-family: 'Reem Kufi Fun', sans-serif; /* Change font family to Reem Kufi */
+  font-size: 50px;
+}
+
+.elevated {
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+  transition: box-shadow 0.3s ease;
+}
+/* Animation for the text inside .animated-text */
+@keyframes animate {
+  0% { content: "We Provide..."; }
+  25% { content: "Innovative Solutions"; }
+  50% { content: "Cutting-edge Technology"; }
+  75% { content: "AI & Quantum Integration"; }
+  100% { content: "Transformative Experiences"; }
+}
+
+/* Animation for the text before .animated-text */
+.animated-text::before {
+  content: "We Provide..."; /* Initial content */
+  animation: animate 5s infinite; /* Apply animation */
+  display: grid;
+}
+
+#progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 5px; /* Adjust height as needed */
+  background-color: #007bff; /* Adjust color as needed */
+  z-index: 9999;
+  transition: width 0.3s ease;
+}
+
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #007bff; /* Change color as needed */
+  z-index: 9999;
+}
+
+@media (max-width: 991px) { 
+  #slide2{
+    background-color: #156efc;
+    height: 100vh;
+    display: flex;
+    flex-direction:column-reverse;
+   }
+  
+   .infra img{
+    height: fit-content;
+    padding-top: 25px;
+   }
+  
+}
+
+@keyframes animate {
+  0%, 100% {
+      content: "AI Based Product Developments";
+  }
+
+  25% {
+      content: "Corporate Training on AIML, Data Science, NLP & Generative AI";
+  }
+
+  45% {
+      content: "Mobile/Web App , Full Stack Developments";
+  }
+
+  65% {
+      content: "Develop Chatbots, Custom LLMs";
+  }
+  85%{
+    content: "Cloud Based Application Development";
+  }
+}
+
+
+                                                             /* Slide-3 */
+
+#slide3{
+  
+  height: 85vh;
+ 
+  
+}
+.prod{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content:center ;
+  height: 50%;
+  
+}
+
+#slide3 h3{
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.products p{
+  text-align: justify;
+  text-indent: 20px;
+  margin-top: 50px;
+  padding: 15px;
+}
+
+
+@media (max-width: 991px) { 
+  #slide3{
+
+    height:fit-content; 
+    
+  }
+  .flip-card{
+    margin-left: 30px;
+    height: 100px;
+  }
+  .prod{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* flip-cards */
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #d6d2d2;
+    border-radius: 12px;
+    box-shadow: 2px gray;
+    padding: 3px;
+    perspective: 1000px; /* 3D effect */
+    }
+    
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        border-radius: 12px;
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      /* Position the front and back side */
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+      
+      /* Style the front side (fallback if image is missing) */
+      .flip-card-front {
+        background-color: #ffffff;
+        color: black;
+      }
+    
+      .flip-card-back {
+        background-color: #234675;
+        color: white;
+        border-radius: 12px;
+        transform: rotateY(180deg);
+      }
+      h1{
+        color:slategrey;
+        margin-bottom: 15px;
+      }
+
+
+
+
+                                                                  /* slide4 */
+#slide4{
+  height: 100vh;
+ 
+}
+
+.joinn{
+  height: 50vh;
+  background-color: rgb(221, 155, 68);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.li{
+  font-size: 20px;
+}
+
+
+.get{
+  height:30vh;
+  width: 300px;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carouselExampleSlidesOnly{
+  height: 100%;
+  width: 100%;
+  
+}
+.jo{
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  
+}
+.jo button{
+  border: 0px;
+  padding: 4px;
+  margin-bottom: 2px;
+}
+
+@media (max-width: 991px) { 
+  .joinn{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .get{
+    margin-bottom: 90px;
+  }
+  .carouselExampleSlidesOnly{
+    height: 100%;
+    width: 100%;
+    
+    
+  }
+
+  .jo{
+    width: fit-content;
+    
+  }
+ }
+
+
+/* footer  */
+
+
+.footer{
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 100px;
+}
+.media ul li{
+  padding: 5px;
+}
+.media i{
+  padding-left: 5px;
+}
+.creater{
+  text-align: center;
+}
+
+ @media (max-width: 991px) { 
+ .footer{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  text-align: center;
+ }
+} 
+.reem-kufi {
+  font-family: "Reem Kufi", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Add styles for the theme toggle button */
+.theme-toggle-btn {
+  background-color: #ffffff; /* Set initial background color */
+  color: #000000; /* Set initial text color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 20px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition for color change */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.theme-toggle-btn:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+}
+
+/* Add styles for the text inside the button */
+.toggle-text {
+  margin-left: 5px;
+}
+
+/* Style for the dark theme */
+.dark-theme {
+  background-color: #121212; /* Set background color for dark theme */
+  color: #ffffff; /* Set text color for dark theme */
+}
+
+/* Style for the light theme */
+.light-theme {
+  background-color: #ffffff; /* Set background color for light theme */
+  color: #000000; /* Set text color for light theme */
+}
